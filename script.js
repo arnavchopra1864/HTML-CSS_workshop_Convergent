@@ -1,11 +1,15 @@
-// script.js
+document.addEventListener('DOMContentLoaded', (event) => {
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
 
-// Alert message when the page loads
-window.onload = function() {
-  alert("Welcome to my first web page!");
-};
+  themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+  });
 
-// Function to change the text when button is clicked
-function changeText() {
-  document.getElementById("myParagraph").innerText = "You clicked the button!";
-}
+  // Check for saved theme preference
+  const savedTheme = localStorage.getItem('dark-mode');
+  if (savedTheme === 'true') {
+      body.classList.add('dark-mode');
+  }
+});
