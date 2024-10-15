@@ -1,19 +1,121 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>My Personal Project</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnav Chopra - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
 
-  <h1>Hello World!</h1>
-  
-  <p>This is my first web page!</p>
-  
-  <button onclick="changeText()">Click me!</button>
-  
+    <main>
+        <section id="about">
+            <h1>Arnav Chopra</h1>
+            <p>(512) 565-3784 · arnavchopra@utexas.edu</p>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <h3>The University of Texas at Austin</h3>
+            <p>Bachelor of Science in Computer Sciences - ML & AI Concentration (May 2026)</p>
+            <p>Bachelor of Science in Mathematics</p>
+            <p>Comprehensive Business Minor</p>
+            <p>Overall GPA: 3.9</p>
+            <h4>Relevant Coursework:</h4>
+            <p>Artificial Intelligence; Natural Language Processing; Software Engineering; Algorithms and Complexity; Principles of Machine Learning; Principles of Computer Systems; Computer Architecture and Organization; Data Structures and Algorithms; Discrete Mathematics for Computer Science; Competitive Programming; Computer Programming: C++; Contemporary Issues in the Digital Age; Ethical Foundations of Computer Science</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Technical Skills:</h3>
+            <p>Java, C, Python, JavaScript, C++, SQL, HTML, CSS, Node.js, React</p>
+            <h3>Technologies:</h3>
+            <p>Git, VSCode, IntelliJ, Eclipse, GitHub, GitLab, PyCharm, Outlook, Excel, Word, PowerPoint, PowerBI, Office, iOS</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <article>
+                <h3>Texas Department of Information Resources - Chief Technology Office Analyst</h3>
+                <p>Jun 2024 - Aug 2024</p>
+                <ul>
+                    <li>Collated a business analytics report of 18,000 entries using Pandas and PowerBI to present to the speaker of the House</li>
+                    <li>Facilitated exposure of state agencies to new tech such as Generative AI, Azure, and Tableau</li>
+                    <li>Collaborated on Asana, learning Kanban and Agile methodologies</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Shaanti - Software Engineer Intern</h3>
+                <p>May 2024 - Aug 2024</p>
+                <ul>
+                    <li>Developed chatbot to allow users to better understand Ayurveda</li>
+                </ul>
+            </article>
+            <article>
+                <h3>MemARy Labs - Software Engineer Intern</h3>
+                <p>Jan 2024 - Jun 2024</p>
+                <ul>
+                    <li>Implemented LLM-powered query decomposition (in Retrieval Augmented Generation pipeline) using LangChain</li>
+                    <li>Built routing agent capabilities to select appropriate tool for each query with Llama-Index</li>
+                    <li>Peaked at 17th YCombinator's Trending (April 30th, 2024)</li>
+                    <li>Open-sourced and pivoted to providing as a service</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Dermetric - Machine Learning Engineer</h3>
+                <p>Jan 2024 - Apr 2024</p>
+                <ul>
+                    <li>Used TensorFlow's mobile_netv2 to build data models to determine whether a submitted image included skin</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>MIND: Mental Initiative for Navigating Distress</h3>
+                <p>Sep 2024 - Present</p>
+                <ul>
+                    <li>Hosted website on AWS to provide information about mental health. Used RESTful API to get data.</li>
+                    <li>Built pleasant frontend using Bootstrap CSS, React, and Next.js, Backend using Flask and Docker</li>
+                    <li>Collaborated using GitLab issues, Postman, Slack</li>
+                </ul>
+            </article>
+            <article>
+                <h3>FactFlow - Founder</h3>
+                <p>Jan 2024 - Aug 2024</p>
+                <ul>
+                    <li>Built a Retrieval-Augmented Generation research tool to facilitate finding scholarly papers for students and research labs</li>
+                    <li>Used HuggingFace for embedding, Llama-Index for RAG, Tavily for information retrieval, Firebase for database, Flask for backend</li>
+                    <li>Won Best Overall at Texas Convergent Demo Day from 21 competing teams</li>
+                    <li>Received $2500 in grant funding through UT Austin Harkey Institute</li>
+                    <li>Pivoted to a full-fledged startup, gaining real-world marketing and data science experience</li>
+                </ul>
+            </article>
+            <!-- Add more projects here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arnav Chopra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
